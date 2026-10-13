@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #818cf8;
+    border-color: #4f46e5;
+}
+
+button {
+    padding: 13px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+.reset-btn {
+    background: #64748b;
+    margin-top: 0;
+}
+
+.reset-btn:hover {
+    background: #475569;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eef2ff;
+    border-radius: 10px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.result h2 {
+    color: #4338ca;
+    margin-bottom: 10px;
+}
+
+.result p {
+    margin-bottom: 5px;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+#table-container {
+    margin-top: 25px;
+    overflow-x: auto;
+}
+
+#table-container h2 {
+    margin-bottom: 12px;
+    color: #4338ca;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+}
+
+th {
+    background: #4f46e5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.selected {
+    color: #15803d;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
